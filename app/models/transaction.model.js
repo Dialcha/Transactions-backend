@@ -7,7 +7,7 @@ module.exports = mongoose => {
           nitOriginCompany: { type: String, required: true},
           destAccount: { type: String, required: true },
           nitDestCompany: { type: String, required: true},
-          paymentMethod: { type: String, required: true, enum: ['transaction', 'credit card']},
+          paymentMethod: { type: String, required: true, enum: ['TRANSFERENCIA BANCARIA', 'TARJETA DE CREDITO']},
           value: { type: Number, required: true },
           date: { type: Date, required: true},
           anomaly: { type: String, required: true}
