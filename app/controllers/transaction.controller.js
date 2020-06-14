@@ -9,6 +9,7 @@ exports.create = (req, res) => {
     nitOriginCompany: req.body.nitOriginCompany,
     destAccount: req.body.destAccount,
     nitDestCompany: req.body.nitDestCompany,
+    paymentMethod: req.body.paymentMethod,
     value: req.body.value,
     date: req.body.date,
     anomaly: req.body.anomaly ? req.body.anomaly : "No anomalies"
