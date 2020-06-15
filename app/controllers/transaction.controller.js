@@ -43,7 +43,7 @@ exports.findAll = (req, res) => {
 
 // Find a single Tutorial with an id
 exports.findOne = (req, res) => {
-    const id = req.params._id;
+    const id = req.params.id;
 
     Transaction.findById(id)
       .then(data => {

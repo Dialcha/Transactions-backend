@@ -12,5 +12,5 @@ module.exports = app => {
     // Retrieve a single Transaction with id
     router.get("/:id", transaction.findOne);
   
-    app.use('/api/transactions', router);
+    app.use('/v1/transactions', router);
   };
